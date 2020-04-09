@@ -57,7 +57,7 @@ dependencies {
     api 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
 
     // Butterknife
-    annotationProcessor 'com.jakewharton:butterknife:10.0.0'
+    implementation 'com.jakewharton:butterknife:10.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
 
     // Dagger dependencies, do not change order.
