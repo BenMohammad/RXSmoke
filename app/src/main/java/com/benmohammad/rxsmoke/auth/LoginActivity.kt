@@ -1,7 +1,6 @@
 package com.benmohammad.rxsmoke.auth
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -11,7 +10,7 @@ import android.webkit.CookieSyncManager
 import android.widget.Button
 import android.widget.ProgressBar
 import com.benmohammad.rxsmoke.AppPreferences
-import com.benmohammad.rxsmoke.HomeActivity
+import com.benmohammad.rxsmoke.home.HomeActivity
 import com.benmohammad.rxsmoke.R
 import com.benmohammad.rxsmoke.base.BaseActivity
 import com.benmohammad.rxsmoke.constants.AppConstants

@@ -1,8 +1,10 @@
-package com.benmohammad.rxsmoke;
+package com.benmohammad.rxsmoke.home;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.benmohammad.rxsmoke.R;
 
 public class HomeActivity extends AppCompatActivity {
 
