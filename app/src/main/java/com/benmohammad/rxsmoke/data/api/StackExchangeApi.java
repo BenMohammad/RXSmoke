@@ -31,8 +31,8 @@ public interface StackExchangeApi {
                                                  @Query(PAGE_SIZE) String size);
 
     @GET(API_V1_QUESTIONS_JSON)
-    Observable<QuestionsResponse> getQuestionsFlowable(@Query(SORT) String sort, @Query(SITE) String site,
-                                                       @Query(ORDER) String order, @Query(PAGE) String page,
+    Flowable<QuestionsResponse> getQuestionsFlowable(@Query(SORT) String sort, @Query(SITE) String site,
+                                                       @Query(ORDER) String order, @Query(PAGE) long page,
                                                        @Query(PAGE_SIZE) long size);
 
     @GET(API_V1_QUESTIONS_JSON)
@@ -51,8 +51,8 @@ public interface StackExchangeApi {
                                                      @Query(PAGE_SIZE) String size);
 
     @GET(API_V1_USERS_QUESTIONS_JSON)
-    Observable<QuestionsResponse> getUsersQuestionsFlowable(@Path(IDS) String ids, @Query(SORT) String sort, @Query(SITE) String site,
-                                                           @Query(ORDER) String order, @Query(PAGE) String page,
+    Flowable<QuestionsResponse> getUsersQuestionsFlowable(@Path(IDS) Long ids, @Query(SORT) String sort, @Query(SITE) String site,
+                                                           @Query(ORDER) String order, @Query(PAGE) long page,
                                                            @Query(PAGE_SIZE) long size);
 
     @GET(API_V1_USER_ME_JSON)
