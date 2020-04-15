@@ -83,6 +83,11 @@ public abstract class BaseFragment extends Fragment implements MvpView {
     }
 
     @Override
+    public void onError(int resId) {
+
+    }
+
+    @Override
     public void onError(String message) {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getBaseActivity())
                 .setTitle(R.string.error)
