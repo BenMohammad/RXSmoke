@@ -12,7 +12,7 @@ public class RxEventBus {
     @Inject
     public RxEventBus(){}
 
-    private PublishSubject<Pair<String, Object>> eventSubject = PublishSubject.create();
+    public PublishSubject<Pair<String, Object>> eventSubject = PublishSubject.create();
 
     public Observable<Pair<String, Object>> toObservables() {
         return eventSubject;

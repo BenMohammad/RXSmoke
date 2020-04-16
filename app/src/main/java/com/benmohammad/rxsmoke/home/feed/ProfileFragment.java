@@ -149,7 +149,7 @@ public class ProfileFragment extends BaseFragment implements HasSupportFragmentI
         presenter.onDetach();
     }
 
-    private void handleProfileClicked() {
+    public void handleProfileClicked() {
         if(preferences.isLoggedIn()) {
             toolbar.getMenu().clear();
             toolbar.inflateMenu(R.menu.menu_logout);
